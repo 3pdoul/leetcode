@@ -55,14 +55,14 @@ public:
         
     }
     int getFront() {
-        if (isEmpty) return -1;
+        if (isEmpty()) return -1;
         return (data[frontPtr]);
         
     }
     
     int getRear() {
-        if (isEmpty) return -1;
-        return (data[rearPtr]);
+        if (isEmpty()) return -1;
+        return data[(rearPtr - 1 + capacity) % capacity];
         
     }
     
