@@ -12,7 +12,6 @@ public:
             int modValue = ((i % k) + k) % k; 
             count[modValue]++;
         }
-
         for (const auto& p : count) {
             int remainder = p.first;
             if (remainder == 0) {
@@ -29,7 +28,6 @@ public:
         return true;
     }
 };
-
 int main() {
     Solution solution;
     
