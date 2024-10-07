@@ -43,7 +43,6 @@ public:
         return (ptr_left > s1_right);
     }
 };
-
 int main() {
     Solution solution;
     std::string sentence1 = "My name is Haley";
